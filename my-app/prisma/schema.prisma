@@ -1,0 +1,139 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AdminSession {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  expires      DateTime
+  createdAt    DateTime @default(now())
+}
+
+
+
+model Product {
+  id           String         @id @default(cuid())
+  slug         String         @unique
+  name         String
+  description  String
+  price        Decimal        @db.Decimal(10, 2)
+  inStock      Boolean        @default(true)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  categoryId   String
+  collectionId String?
+  displayOrder Int?
+  archivedAt   DateTime?
+  isArchived   Boolean        @default(false)
+  discount     Discount?
+  orderItems   OrderItem[]
+  category     Category       @relation(fields: [categoryId], references: [id])
+  collection   Collection?    @relation(fields: [collectionId], references: [id])
+  images       ProductImage[]
+  sizes        ProductSize[]
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  imageUrl  String?
+  products  Product[]
+}
+
+model Collection {
+  id               String         @id @default(cuid())
+  name             String
+  description      String
+  available        Boolean        @default(true)
+  collectionType   CollectionType @default(CURRENT)
+  discontinuedDate DateTime?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  products         Product[]
+}
+
+model ProductImage {
+  id        String   @id @default(cuid())
+  url       String
+  order     Int
+  productId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+model ProductSize {
+  id            String   @id @default(cuid())
+  size          String
+  price         Decimal  @db.Decimal(10, 2)
+  stock         Int      @default(0)
+  reservedStock Int      @default(0)
+  productId     String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  product       Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, size])
+}
+
+model Discount {
+  id         String   @id @default(cuid())
+  percentage Decimal  @db.Decimal(5, 2)
+  enabled    Boolean  @default(false)
+  productId  String   @unique
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  orderNumber     String      @unique
+  total           Decimal     @db.Decimal(10, 2)
+  status          OrderStatus @default(PENDING)
+  customerName    String
+  customerEmail   String?
+  customerPhone   String
+  shippingAddress String
+  paymentProofUrl String?
+  receiptId       String?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  items           OrderItem[]
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  productId String
+  orderId   String
+  name      String
+  price     Decimal  @db.Decimal(10, 2)
+  size      String
+  quantity  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id])
+}
+
+
+enum OrderStatus {
+  PENDING
+  APPROVED
+}
+
+enum CollectionType {
+  CURRENT
+  DISCONTINUED
+}
