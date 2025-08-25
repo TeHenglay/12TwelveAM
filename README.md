@@ -3,8 +3,6 @@
 > **Where Today Meets Tomorrow.**  
 > A sleek, fast, and secure web store for limited‑drop shirts and apparel.
 
-<!-- Optional: replace with your own screenshot or remove -->
-![Hero](./public/hero.png)
 
 ---
 
