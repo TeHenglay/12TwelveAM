@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { ChangeEvent } from 'react';
 import { useCart } from '@/app/store/useCart';
 import { useSearchParams } from 'next/navigation';
 
-export default function CartPage() {
+function CartContent() {
   const { items, updateQuantity, removeItem, total } = useCart();
   const searchParams = useSearchParams();
   const [isHydrated, setIsHydrated] = useState(false);
@@ -218,5 +218,13 @@ export default function CartPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function CartPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading cart...</div>}>
+      <CartContent />
+    </Suspense>
   );
 }

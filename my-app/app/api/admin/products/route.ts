@@ -3,7 +3,7 @@ import { prisma } from '@/app/lib/db';
 // Authentication removed - admin access is open
 import { productQuerySchema, validateQuery, validateBody, validationErrorResponse, createProductSchema } from '@/app/lib/validations';
 import { invalidateCache, CACHE_KEYS } from '@/app/lib/redis';
-import { broadcastProductUpdate } from '@/app/api/sse/product-updates/route';
+import { broadcastProductUpdate } from '@/app/lib/sse-manager';
 
 export async function GET(request: NextRequest) {
   try {

@@ -20,9 +20,9 @@ const ITEMS_PER_PAGE = 24;
 export default async function ProductsPage({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }) {
-  const params = await Promise.resolve(searchParams);
+  const params = await searchParams;
   const currentPage = Number(params.page) || 1;
   if (currentPage < 1) redirect('/products');
 

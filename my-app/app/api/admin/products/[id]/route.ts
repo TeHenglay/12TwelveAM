@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/app/lib/db';
 // Authentication removed - admin access is open
 import { invalidateCache, CACHE_KEYS } from '@/app/lib/redis';
-import { broadcastProductUpdate } from '@/app/api/sse/product-updates/route';
+import { broadcastProductUpdate } from '@/app/lib/sse-manager';
 
 export async function GET(
   request: NextRequest,
