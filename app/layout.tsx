@@ -9,8 +9,8 @@ const leagueSpartan = League_Spartan({
 });
 
 export const metadata: Metadata = {
-  title: "E-Shop - Your Online Store",
-  description: "Discover amazing products at great prices",
+  title: "Twelve-AM",
+  description: "Where today meet tomorrow",
 };
 
 export default function RootLayout({
