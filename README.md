@@ -35,7 +35,7 @@ Welcome to **Twelve AM** - A premium e-commerce destination offering the latest 
 
 Start your shopping journey today and discover why Twelve AM is becoming the go-to destination for style-conscious shoppers.
 
-## � Shopping Made Simple
+## 📱 Shopping Made Simple
 
 1. **Browse** our curated collections
 2. **Add** items to your cart
@@ -50,23 +50,13 @@ Start your shopping journey today and discover why Twelve AM is becoming the go-
 - **Best Sellers** - Customer favorites
 - **Sale Items** - Special offers and discounts
 
-## � Contact Us
+## 💌 Contact Us
 
 Have questions? We're here to help!
 
 - **Email:** support@twelveam.com
 - **Hours:** Monday - Friday, 9 AM - 6 PM
 - **Response Time:** Within 24 hours
-
-## 🌟 Customer Reviews
-
-*"Amazing quality and fast shipping! Twelve AM has become my go-to for all my fashion needs."* - Sarah M.
-
-*"The website is so easy to use and the product selection is fantastic."* - Michael K.
-
-*"Love the modern design and the quality of products. Highly recommend!"* - Emma L.
-
----
 
 **Follow us for the latest updates and exclusive offers:**
 - 📸 Instagram: [@twelveam](https://instagram.com/twelveam)
