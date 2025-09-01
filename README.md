@@ -23,7 +23,7 @@ Welcome to **Twelve AM** - A premium e-commerce destination offering the latest 
 - **Customer Support** - Dedicated support team ready to help
 
 ### 🌐 **Modern Shopping Features**
-- **Interactive Product Gallery** - 360° views and detailed imagery
+- **Interactive Product Gallery** - zoom views and detailed imagery
 - **Wishlist & Favorites** - Save items for later
 - **Order Tracking** - Real-time updates on your purchases
 - **Personalized Recommendations** - Products tailored to your style
