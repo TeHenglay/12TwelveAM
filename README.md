@@ -4,7 +4,7 @@
 
 Welcome to **Twelve AM** - A premium e-commerce destination offering the latest trends and timeless classics. Experience shopping redefined with our modern, intuitive platform designed for the contemporary lifestyle.
 
-![Twelve AM Banner](public/hero.png)
+![Twelve AM Banner](TwelveAM/public/hero.png)
 
 ## ✨ Why Choose Twelve AM?
 
