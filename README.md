@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Twelve AM
 
-## Getting Started
+> **"Where today meets tomorrow"**
 
-First, run the development server:
+Welcome to **Twelve AM** - A premium e-commerce destination offering the latest trends and timeless classics. Experience shopping redefined with our modern, intuitive platform designed for the contemporary lifestyle.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Twelve AM Banner](public/hero.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Why Choose Twelve AM?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🛍️ **Seamless Shopping Experience**
+- **Curated Collection** - Handpicked products that define modern style
+- **Smart Search & Filters** - Find exactly what you're looking for with advanced filtering
+- **Real-time Stock Updates** - Never miss out on your favorite items
+- **Mobile-Optimized** - Shop anywhere, anytime on any device
+- **Secure Checkout** - Safe and fast payment processing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 **What We Offer**
+- **Fashion & Lifestyle** - Contemporary clothing and accessories
+- **Premium Quality** - Every product meets our high standards
+- **Competitive Pricing** - Best value for premium products
+- **Fast Delivery** - Quick shipping to your doorstep
+- **Customer Support** - Dedicated support team ready to help
 
-## Learn More
+### 🌐 **Modern Shopping Features**
+- **Interactive Product Gallery** - 360° views and detailed imagery
+- **Wishlist & Favorites** - Save items for later
+- **Order Tracking** - Real-time updates on your purchases
+- **Personalized Recommendations** - Products tailored to your style
+- **Easy Returns** - Hassle-free return policy
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Visit Twelve AM
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**🌍 Live Website:** [12am.laszlo.icu](https://12am.laszlo.icu/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start your shopping journey today and discover why Twelve AM is becoming the go-to destination for style-conscious shoppers.
 
-## Deploy on Vercel
+## � Shopping Made Simple
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Browse** our curated collections
+2. **Add** items to your cart
+3. **Checkout** securely
+4. **Track** your order
+5. **Enjoy** your purchase!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛒 Product Categories
+
+- **New Arrivals** - Latest additions to our collection
+- **Trending Now** - Most popular items this season
+- **Best Sellers** - Customer favorites
+- **Sale Items** - Special offers and discounts
+
+## � Contact Us
+
+Have questions? We're here to help!
+
+- **Email:** support@twelveam.com
+- **Hours:** Monday - Friday, 9 AM - 6 PM
+- **Response Time:** Within 24 hours
+
+## 🌟 Customer Reviews
+
+*"Amazing quality and fast shipping! Twelve AM has become my go-to for all my fashion needs."* - Sarah M.
+
+*"The website is so easy to use and the product selection is fantastic."* - Michael K.
+
+*"Love the modern design and the quality of products. Highly recommend!"* - Emma L.
+
+---
+
+**Follow us for the latest updates and exclusive offers:**
+- 📸 Instagram: [@twelveam](https://instagram.com/twelveam)
+- 📘 Facebook: [Twelve AM](https://facebook.com/twelveam)
+- 🐦 Twitter: [@twelveam](https://twitter.com/twelveam)
+
+**🛍️ Start Shopping Today at [Twelve AM](https://12am.laszlo.icu/)**
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- **Framework**: Next.js 15 with App Router
+- **Styling**: TailwindCSS with custom animations
+- **UI Components**: Radix UI primitives
+- **3D Graphics**: Three.js with React Three Fiber
+- **Animations**: Framer Motion & GSAP
+- **State Management**: Zustand
+- **Form Handling**: React Hook Form with Zod validation
+
+### **Backend**
+- **Runtime**: Node.js
+- **Database**: PostgreSQL with Prisma ORM
+- **Caching**: Redis (Upstash)
+- **Authentication**: JWT with bcrypt
+- **File Upload**: Custom implementation
+- **Rate Limiting**: Upstash Rate Limit
+
+### **DevOps & Deployment**
+- **Hosting**: Vercel
+- **Database**: PostgreSQL (cloud-hosted)
+- **Cache**: Upstash Redis
+- **CI/CD**: GitHub Actions
+- **Monitoring**: Built-in performance tracking
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**TeHenglay**
+- GitHub: [@TeHenglay](https://github.com/TeHenglay)
+
+**🌟 Star this repository if you found it helpful!**
